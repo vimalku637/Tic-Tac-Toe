@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical"
+    tools:context=".ChooseGamePlayModeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:ignore="HardcodedText">
+
+        <LinearLayout
+            android:id="@+id/containerOfflineMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"
+                android:alpha="0"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/choose_your_play_mode"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:textColor="#101010"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:alpha="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPlayWithAiMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="85dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/bg_button_1"
+                android:fontFamily="@font/poppins_medium"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:text="@string/with_ai"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPlayWithFriendMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="85dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_button_2"
+                android:fontFamily="@font/poppins_medium"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:text="@string/with_a_friend"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
+                android:elevation="4dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="40dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/settingGifViewOfflineMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="7.5dp"
+                    android:src="@drawable/ic_settings_gif" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/containerOfflineMenu"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/BANNER_AD_UNIT_ID" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgLogoOfflineMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/app_inside_icon"
+        tools:visibility="gone"
+        android:contentDescription="@string/app_name" />
+
+</FrameLayout>

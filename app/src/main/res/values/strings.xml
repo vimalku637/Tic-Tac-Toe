@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="BANNER_AD_UNIT_ID">ca-app-pub-1719443042342371/4479041370</string>
+    <string name="INTERSTITIAL_AD_UNIT_ID">ca-app-pub-1719443042342371/8226714690</string>
+    <string name="REWARDED_AD_UNIT_ID">ca-app-pub-1719443042342371/3594442338</string>
+    <string name="choose_your_play_mode">Choose your play mode</string>
+    <string name="with_ai">With AI</string>
+    <string name="with_a_friend">With a friend</string>
+    <string name="player_one">Player One</string>
+    <string name="player_two">Player Two</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="next">Next</string>
+    <string name="pick_your_side">Pick your side</string>
+    <string name="continue_">Continue</string>
+    <string name="player_name">Player Name</string>
+    <string name="robot">Robot</string>
+    <string name="vibration">Vibration</string>
+    <string name="sound">Sound</string>
+    <string name="rating">Rating</string>
+    <string name="feedback">Feedback</string>
+</resources>
